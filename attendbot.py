@@ -3,8 +3,9 @@ import asyncio
 
 client = discord.Client()
 id = input("Input Channel ID:")
-@client.event
-async def on_ready():
+# @client.event
+# async 
+def on_ready():
     vc = client.get_channel(id) #get the id of the voice channel
     attend = vc.members
     f = open('Attendees.txt', 'w+')
@@ -12,5 +13,6 @@ async def on_ready():
     f.close()
 
 variable = input("P")
-asyncio.run(on_ready())
+# asyncio.run(on_ready())
+on_ready()
 variable = input("P")
